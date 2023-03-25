@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../controllers/errors/page_not_found_404.dart';
 import '../routes/routing.dart';
+import '../views/errors/page_not_found_404.dart';
 
 void main(List<String> args) {
   runApp(const Kanadventures());

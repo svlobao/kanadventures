@@ -24,7 +24,9 @@ class _BottomStudyState extends State<BottomStudy> {
             InkWell(
               onTap: () {
                 setState(() {
-                  Navigator.of(context).pushNamed('/');
+                  Navigator.of(context).pushNamed('/kanas_json');
+                  // ignore: avoid_print
+                  print('updating kanas...');
                 });
               },
               child: const Card(
