@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kanadventures/client/components/bottom%20nav%20bar/home/progress_bar.dart';
+import 'package:kanadventures/source/client/components/bottom%20nav%20bar/home/progress_bar.dart';
 
 class BottomHome extends StatefulWidget {
   const BottomHome({Key? key}) : super(key: key);

@@ -1,0 +1,24 @@
+{
+    "kanas": [
+        {
+            "id":1, "hiragana":"あ", "katakana":"ア",
+            "romaji":"a", "family":"a", "classification":"vowel"
+        },
+        {
+            "id":1, "hiragana":"い", "katakana":"イ",
+            "romaji":"i", "family":"a", "classification":"vowel"
+        },
+        {
+            "id":1, "hiragana":"う", "katakana":"ウ",
+            "romaji":"u", "family":"a", "classification":"vowel"
+        },
+        {
+            "id":1, "hiragana":"え", "katakana":"エ",
+            "romaji":"e", "family":"a", "classification":"vowel"
+        },
+        {
+            "id":1, "hiragana":"お", "katakana":"オ",
+            "romaji":"o", "family":"a", "classification":"vowel"
+        }
+    ]
+}
