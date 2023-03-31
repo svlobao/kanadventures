@@ -1,18 +1,16 @@
-{
-    "data":[
-        {
-            "id":1,
-            "jp":"愛",
-            "kana":"あい",
-            "romaji":"ai",
-            "eng":"love"
-        },
-        {
-            "id":2,
-            "jp":"会う",
-            "kana":"あう",
-            "romaji":"au",
-            "eng":"to meet (e.g. with someone)"
-        }
-    ]
-}
+[
+    {
+        "id":1,
+        "jp":"愛",
+        "kana":"あい",
+        "romaji":"ai",
+        "eng":"love"
+    },
+    {
+        "id":2,
+        "jp":"会う",
+        "kana":"あう",
+        "romaji":"au",
+        "eng":"to meet (e.g. with someone)"
+    }
+]

@@ -1,11 +1,11 @@
 {
-    "data":{
-        "hiraganas": [],
-        "katakanas": [],
-        "kanjis": [],
-        "words": [],
-        "missions": [],
-        "days_created": 0,
-        "days_in_a_row": 0
-    }
+
+    "hiraganas": [],
+    "katakanas": [],
+    "kanjis": [],
+    "words": [],
+    "missions": [],
+    "days_created": 0,
+    "days_in_a_row": 0
+
 }

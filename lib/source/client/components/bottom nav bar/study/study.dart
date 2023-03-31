@@ -43,7 +43,7 @@ class _BottomStudyState extends State<BottomStudy> {
             InkWell(
               onTap: () {
                 setState(() {
-                  Navigator.of(context).pushNamed('/');
+                  Navigator.of(context).pushNamed('/study_katakana');
                 });
               },
               child: const Card(
@@ -62,7 +62,7 @@ class _BottomStudyState extends State<BottomStudy> {
             InkWell(
               onTap: () {
                 setState(() {
-                  Navigator.of(context).pushNamed('/');
+                  Navigator.of(context).pushNamed('/study_kanji');
                 });
               },
               child: const Card(
@@ -80,7 +80,7 @@ class _BottomStudyState extends State<BottomStudy> {
             InkWell(
               onTap: () {
                 setState(() {
-                  Navigator.of(context).pushNamed('/');
+                  Navigator.of(context).pushNamed('/study_vocabulary');
                 });
               },
               child: const Card(

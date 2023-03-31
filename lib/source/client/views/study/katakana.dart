@@ -3,20 +3,20 @@ import 'package:logger/logger.dart';
 
 import '../../../server/scripts/read/read_json.dart';
 
-class StudyHiragana extends StatefulWidget {
-  const StudyHiragana({Key? key}) : super(key: key);
+class StudyKatakana extends StatefulWidget {
+  const StudyKatakana({Key? key}) : super(key: key);
 
   @override
-  State<StudyHiragana> createState() => _StudyHiraganaState();
+  State<StudyKatakana> createState() => _StudyKatakanaState();
 }
 
-class _StudyHiraganaState extends State<StudyHiragana> {
+class _StudyKatakanaState extends State<StudyKatakana> {
   final String jsonPath = 'assets/json/kanas.json';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('HIRAGANA')),
+      appBar: AppBar(title: const Text('KATAKANA')),
       body: FutureBuilder(
         future: fetchJson(path: jsonPath),
         builder: (context, snapshot) {
@@ -29,7 +29,7 @@ class _StudyHiraganaState extends State<StudyHiragana> {
                 itemCount: hiraganas.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                      leading: Text(hiraganas[index]['hiragana'].toString()));
+                      leading: Text(hiraganas[index]['katakana'].toString()));
                 },
               );
             } else {
