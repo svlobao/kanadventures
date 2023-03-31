@@ -38,5 +38,45 @@
         "romaji":"o", 
         "family":"a", 
         "classification":"vowel"
+    },
+    {
+        "id":6, 
+        "hiragana":"か", 
+        "katakana":"カ",
+        "romaji":"ka", 
+        "family":"ka", 
+        "classification":"consonant"
+    },
+    {
+        "id":7, 
+        "hiragana":"き", 
+        "katakana":"キ",
+        "romaji":"ki", 
+        "family":"ka", 
+        "classification":"consonant"
+    },
+    {
+        "id":8, 
+        "hiragana":"く", 
+        "katakana":"ク",
+        "romaji":"ku", 
+        "family":"ka", 
+        "classification":"consonant"
+    },
+    {
+        "id":9, 
+        "hiragana":"け", 
+        "katakana":"ケ",
+        "romaji":"ke", 
+        "family":"ka", 
+        "classification":"consonant"
+    },
+    {
+        "id":10, 
+        "hiragana":"こ", 
+        "katakana":"コ",
+        "romaji":"ko", 
+        "family":"ka", 
+        "classification":"consonant"
     }
 ]

@@ -12,6 +12,7 @@ class StudyHiragana extends StatefulWidget {
 
 class _StudyHiraganaState extends State<StudyHiragana> {
   final String jsonPath = 'assets/json/kanas.json';
+  final double popupFontSize = 68.0;
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +26,112 @@ class _StudyHiraganaState extends State<StudyHiragana> {
             if (snapshot.hasData) {
               Logger().d('6. Snapshot has data: \n${snapshot.data}');
               final hiraganas = snapshot.data as List<Map<String, dynamic>>;
-              return ListView.builder(
-                itemCount: hiraganas.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                      leading: Text(hiraganas[index]['hiragana'].toString()));
-                },
+              return GridView.count(
+                crossAxisCount: 5,
+                children: List.generate(
+                  hiraganas.length,
+                  (index) => TextButton(
+                    child: Center(
+                      key: Key(hiraganas[index]['id'].toString()),
+                      child: Text(
+                        hiraganas[index]['hiragana'],
+                        style: const TextStyle(fontSize: 22.0),
+                      ),
+                    ),
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            content: Container(
+                              constraints: BoxConstraints(
+                                maxHeight:
+                                    MediaQuery.of(context).size.height * 0.45,
+                                maxWidth:
+                                    MediaQuery.of(context).size.width * 0.7,
+                                minHeight:
+                                    MediaQuery.of(context).size.height * 0.3,
+                                minWidth:
+                                    MediaQuery.of(context).size.width * 0.3,
+                              ),
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 12.0,
+                                      horizontal: 8.0,
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          hiraganas[index]['hiragana'],
+                                          style: TextStyle(
+                                              fontSize: popupFontSize),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  const Divider(
+                                    color: Color.fromARGB(255, 69, 106, 255),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 18.0,
+                                      horizontal: 8.0,
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          '\"${hiraganas[index]["romaji"]}\"',
+                                          style: TextStyle(
+                                              fontSize: popupFontSize * 0.5),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  const Divider(
+                                    color: Color.fromARGB(255, 69, 106, 255),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 18.0,
+                                      horizontal: 8.0,
+                                    ),
+                                    child: Text(
+                                        'Kana of number #${hiraganas[index]['id']}'),
+                                  ),
+                                  const Divider(
+                                    color: Color.fromARGB(255, 69, 106, 255),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 22.0,
+                                      horizontal: 8.0,
+                                    ),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: const [
+                                        Icon(
+                                          Icons.volume_up_rounded,
+                                          size: 36.0,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    },
+                  ),
+                ),
               );
             } else {
               Logger().d('6. Snapshot is empty. Error: ${snapshot.error}\n');
