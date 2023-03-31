@@ -1,9 +1,18 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 import '../routes/routing.dart';
 import '../views/errors/page_not_found_404.dart';
 
-void main(List<String> args) {
+void main(List<String> args) async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final bundle = await rootBundle.loadString('AssetManifest.json');
+  print(bundle);
+  final Map<String, dynamic> jsonMap = json.decode(bundle);
+  final List<String> assetPaths = jsonMap.keys.toList();
+  print(assetPaths);
   runApp(const Kanadventures());
 }
 

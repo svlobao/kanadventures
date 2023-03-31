@@ -1,11 +1,10 @@
 {
-    "user_id": "",
-    "kanjis":[
-        {
+    "data":
+        [{
+            "id":1,
             "kanji":"人",
             "onyomi":"ひと",
             "kunyomi":["〜じん","〜にん"],
             "meaning":["person", "people", "human"]
-        }
-    ]
+        }]
 }
