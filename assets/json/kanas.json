@@ -5,7 +5,8 @@
         "katakana":"ア",
         "romaji":"a", 
         "family":"a", 
-        "classification":"vowel"
+        "classification":"vowel",
+        "learned": false
     },
     {
         "id":2,
@@ -13,7 +14,8 @@
         "katakana":"イ",
         "romaji":"i", 
         "family":"a", 
-        "classification":"vowel"
+        "classification":"vowel",
+        "learned": false
     },
     {
         "id":3, 
@@ -21,7 +23,8 @@
         "katakana":"ウ",
         "romaji":"u", 
         "family":"a", 
-        "classification":"vowel"
+        "classification":"vowel",
+        "learned": false
     },
     {
         "id":4, 
@@ -29,7 +32,8 @@
         "katakana":"エ",
         "romaji":"e", 
         "family":"a", 
-        "classification":"vowel"
+        "classification":"vowel",
+        "learned": false
     },
     {
         "id":5, 
@@ -37,7 +41,8 @@
         "katakana":"オ",
         "romaji":"o", 
         "family":"a", 
-        "classification":"vowel"
+        "classification":"vowel",
+        "learned": false
     },
     {
         "id":6, 
@@ -45,7 +50,8 @@
         "katakana":"カ",
         "romaji":"ka", 
         "family":"ka", 
-        "classification":"consonant"
+        "classification":"consonant",
+        "learned": false
     },
     {
         "id":7, 
@@ -53,7 +59,8 @@
         "katakana":"キ",
         "romaji":"ki", 
         "family":"ka", 
-        "classification":"consonant"
+        "classification":"consonant",
+        "learned": false
     },
     {
         "id":8, 
@@ -61,7 +68,8 @@
         "katakana":"ク",
         "romaji":"ku", 
         "family":"ka", 
-        "classification":"consonant"
+        "classification":"consonant",
+        "learned": false
     },
     {
         "id":9, 
@@ -69,7 +77,8 @@
         "katakana":"ケ",
         "romaji":"ke", 
         "family":"ka", 
-        "classification":"consonant"
+        "classification":"consonant",
+        "learned": false
     },
     {
         "id":10, 
@@ -77,6 +86,853 @@
         "katakana":"コ",
         "romaji":"ko", 
         "family":"ka", 
-        "classification":"consonant"
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":11, 
+        "hiragana":"さ", 
+        "katakana":"サ",
+        "romaji":"sa", 
+        "family":"sa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":12, 
+        "hiragana":"し", 
+        "katakana":"シ",
+        "romaji":"shi", 
+        "family":"sa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":13, 
+        "hiragana":"す", 
+        "katakana":"ス",
+        "romaji":"su", 
+        "family":"sa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":14, 
+        "hiragana":"せ", 
+        "katakana":"セ",
+        "romaji":"se", 
+        "family":"sa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":15, 
+        "hiragana":"そ", 
+        "katakana":"ソ",
+        "romaji":"so", 
+        "family":"sa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":16, 
+        "hiragana":"た", 
+        "katakana":"タ",
+        "romaji":"ta", 
+        "family":"ta", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":17, 
+        "hiragana":"ち", 
+        "katakana":"チ",
+        "romaji":"chi", 
+        "family":"ta", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":18, 
+        "hiragana":"つ", 
+        "katakana":"ツ",
+        "romaji":"tsu", 
+        "family":"ta", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":19, 
+        "hiragana":"て", 
+        "katakana":"テ",
+        "romaji":"te", 
+        "family":"ta", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":20, 
+        "hiragana":"と", 
+        "katakana":"ト",
+        "romaji":"to", 
+        "family":"ta", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":21, 
+        "hiragana":"な", 
+        "katakana":"ナ",
+        "romaji":"na", 
+        "family":"na", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":22, 
+        "hiragana":"に", 
+        "katakana":"ニ",
+        "romaji":"ni", 
+        "family":"na", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":23, 
+        "hiragana":"ぬ", 
+        "katakana":"ヌ",
+        "romaji":"nu", 
+        "family":"na", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":24, 
+        "hiragana":"ね", 
+        "katakana":"ネ",
+        "romaji":"ne", 
+        "family":"na", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":25, 
+        "hiragana":"の", 
+        "katakana":"ノ",
+        "romaji":"no", 
+        "family":"na", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":26, 
+        "hiragana":"は", 
+        "katakana":"ハ",
+        "romaji":"ha", 
+        "family":"ha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":27, 
+        "hiragana":"ひ", 
+        "katakana":"ヒ",
+        "romaji":"hi", 
+        "family":"ha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":28, 
+        "hiragana":"ふ", 
+        "katakana":"フ",
+        "romaji":"fu", 
+        "family":"ha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":29, 
+        "hiragana":"へ", 
+        "katakana":"ヘ",
+        "romaji":"he", 
+        "family":"ha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":30, 
+        "hiragana":"ほ", 
+        "katakana":"ホ",
+        "romaji":"ho", 
+        "family":"ha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":31, 
+        "hiragana":"ま", 
+        "katakana":"マ",
+        "romaji":"ma", 
+        "family":"ma", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":32, 
+        "hiragana":"み", 
+        "katakana":"ミ",
+        "romaji":"mi", 
+        "family":"ma", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":33, 
+        "hiragana":"む", 
+        "katakana":"ム",
+        "romaji":"mu", 
+        "family":"ma", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":34, 
+        "hiragana":"め", 
+        "katakana":"メ",
+        "romaji":"me", 
+        "family":"ma", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":34, 
+        "hiragana":"も", 
+        "katakana":"モ",
+        "romaji":"mo", 
+        "family":"ma", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":36, 
+        "hiragana":"や", 
+        "katakana":"ヤ",
+        "romaji":"ya", 
+        "family":"ya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":37, 
+        "hiragana":"ゆ", 
+        "katakana":"ユ",
+        "romaji":"yu", 
+        "family":"ya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":38, 
+        "hiragana":"よ", 
+        "katakana":"ヨ",
+        "romaji":"yo", 
+        "family":"ya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":39, 
+        "hiragana":"ら", 
+        "katakana":"ラ",
+        "romaji":"ra", 
+        "family":"ra", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":40, 
+        "hiragana":"り", 
+        "katakana":"リ",
+        "romaji":"ri", 
+        "family":"ra", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":41, 
+        "hiragana":"る", 
+        "katakana":"ル",
+        "romaji":"ru", 
+        "family":"ra", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":42, 
+        "hiragana":"れ", 
+        "katakana":"レ",
+        "romaji":"re", 
+        "family":"ra", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":43, 
+        "hiragana":"ろ", 
+        "katakana":"ロ",
+        "romaji":"ro", 
+        "family":"ra", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":44, 
+        "hiragana":"わ", 
+        "katakana":"ワ",
+        "romaji":"wa", 
+        "family":"wa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":45, 
+        "hiragana":"を", 
+        "katakana":"ヲ",
+        "romaji":"wo", 
+        "family":"wa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":46, 
+        "hiragana":"ん", 
+        "katakana":"ン",
+        "romaji":"nn", 
+        "family":"nn", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":47, 
+        "hiragana":"が", 
+        "katakana":"ガ",
+        "romaji":"ga", 
+        "family":"ga", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":48, 
+        "hiragana":"ぎ", 
+        "katakana":"ギ",
+        "romaji":"gi", 
+        "family":"ga", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":49, 
+        "hiragana":"ぐ", 
+        "katakana":"グ",
+        "romaji":"gu", 
+        "family":"ga", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":50, 
+        "hiragana":"げ", 
+        "katakana":"ゲ",
+        "romaji":"ge", 
+        "family":"ga", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":51, 
+        "hiragana":"ご", 
+        "katakana":"ゴ",
+        "romaji":"go", 
+        "family":"ga", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":52, 
+        "hiragana":"ざ", 
+        "katakana":"ザ",
+        "romaji":"za", 
+        "family":"za", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":53, 
+        "hiragana":"じ", 
+        "katakana":"ジ",
+        "romaji":"ji", 
+        "family":"za", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":54, 
+        "hiragana":"ず", 
+        "katakana":"ズ",
+        "romaji":"zu", 
+        "family":"za", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":55, 
+        "hiragana":"ぜ", 
+        "katakana":"ゼ",
+        "romaji":"ze", 
+        "family":"za", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":56, 
+        "hiragana":"ぞ", 
+        "katakana":"ゾ",
+        "romaji":"zo", 
+        "family":"za", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":57, 
+        "hiragana":"だ", 
+        "katakana":"ダ",
+        "romaji":"da", 
+        "family":"da", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":58, 
+        "hiragana":"ぢ", 
+        "katakana":"ヂ",
+        "romaji":"di", 
+        "family":"da", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":59, 
+        "hiragana":"づ", 
+        "katakana":"ヅ",
+        "romaji":"dzu", 
+        "family":"da", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":60, 
+        "hiragana":"で", 
+        "katakana":"デ",
+        "romaji":"de", 
+        "family":"da", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":61, 
+        "hiragana":"ど", 
+        "katakana":"ド",
+        "romaji":"do", 
+        "family":"da", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":62, 
+        "hiragana":"ば", 
+        "katakana":"バ",
+        "romaji":"ba", 
+        "family":"ba", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":63, 
+        "hiragana":"び", 
+        "katakana":"ビ",
+        "romaji":"bi", 
+        "family":"ba", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":64, 
+        "hiragana":"ぶ", 
+        "katakana":"ブ",
+        "romaji":"bu", 
+        "family":"ba", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":65, 
+        "hiragana":"べ", 
+        "katakana":"ベ",
+        "romaji":"be", 
+        "family":"ba", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":66, 
+        "hiragana":"ぼ", 
+        "katakana":"ボ",
+        "romaji":"bo", 
+        "family":"ba", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":67, 
+        "hiragana":"ぱ", 
+        "katakana":"パ",
+        "romaji":"pa", 
+        "family":"pa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":68, 
+        "hiragana":"ぴ", 
+        "katakana":"ピ",
+        "romaji":"pi", 
+        "family":"pa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":69, 
+        "hiragana":"ぷ", 
+        "katakana":"プ",
+        "romaji":"pu", 
+        "family":"pa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":70, 
+        "hiragana":"ぺ", 
+        "katakana":"ペ",
+        "romaji":"pe", 
+        "family":"pa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":71, 
+        "hiragana":"ぽ", 
+        "katakana":"ポ",
+        "romaji":"po", 
+        "family":"pa", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":72, 
+        "hiragana":"きゃ", 
+        "katakana":"キャ",
+        "romaji":"kya", 
+        "family":"kya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":73, 
+        "hiragana":"きゅ", 
+        "katakana":"キュ",
+        "romaji":"kyu", 
+        "family":"kya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":74, 
+        "hiragana":"きょ", 
+        "katakana":"キョ",
+        "romaji":"kyo", 
+        "family":"kya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":75, 
+        "hiragana":"ぎゃ", 
+        "katakana":"ギャ",
+        "romaji":"gya", 
+        "family":"gya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":76, 
+        "hiragana":"ぎゅ", 
+        "katakana":"ギュ",
+        "romaji":"gyu", 
+        "family":"gya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":77, 
+        "hiragana":"ぎょ", 
+        "katakana":"ギョ",
+        "romaji":"gyo", 
+        "family":"gya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":78, 
+        "hiragana":"しゃ", 
+        "katakana":"シャ",
+        "romaji":"sha", 
+        "family":"sha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":79, 
+        "hiragana":"しゅ", 
+        "katakana":"シュ",
+        "romaji":"shu", 
+        "family":"sha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":80, 
+        "hiragana":"しょ", 
+        "katakana":"ショ",
+        "romaji":"sho", 
+        "family":"sha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":81, 
+        "hiragana":"じゃ", 
+        "katakana":"ジャ",
+        "romaji":"ja", 
+        "family":"ja", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":82, 
+        "hiragana":"じゅ", 
+        "katakana":"ジュ",
+        "romaji":"ju", 
+        "family":"ja", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":83, 
+        "hiragana":"じょ", 
+        "katakana":"ジョ",
+        "romaji":"jo", 
+        "family":"ja", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":84, 
+        "hiragana":"ちゃ", 
+        "katakana":"チャ",
+        "romaji":"cha", 
+        "family":"cha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":85, 
+        "hiragana":"ちゅ", 
+        "katakana":"チュ",
+        "romaji":"chu", 
+        "family":"cha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":86, 
+        "hiragana":"ちょ", 
+        "katakana":"チョ",
+        "romaji":"cho", 
+        "family":"cha", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":87, 
+        "hiragana":"にゃ", 
+        "katakana":"ニャ",
+        "romaji":"nya", 
+        "family":"nya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":88, 
+        "hiragana":"にゅ", 
+        "katakana":"ニュ",
+        "romaji":"nyu", 
+        "family":"nya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":89, 
+        "hiragana":"にょ", 
+        "katakana":"ニョ",
+        "romaji":"nyo", 
+        "family":"nya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":90, 
+        "hiragana":"ひゃ", 
+        "katakana":"ヒャ",
+        "romaji":"hya", 
+        "family":"hya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":91, 
+        "hiragana":"ひゅ", 
+        "katakana":"ヒュ",
+        "romaji":"hyu", 
+        "family":"hya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":92, 
+        "hiragana":"ひょ", 
+        "katakana":"ヒョ",
+        "romaji":"hyo", 
+        "family":"hya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":93, 
+        "hiragana":"びゃ", 
+        "katakana":"ビャ",
+        "romaji":"bya", 
+        "family":"bya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":94, 
+        "hiragana":"びゅ", 
+        "katakana":"ビュ",
+        "romaji":"byu", 
+        "family":"bya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":95, 
+        "hiragana":"びょ", 
+        "katakana":"ビョ",
+        "romaji":"byo", 
+        "family":"bya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":96, 
+        "hiragana":"ぴゃ", 
+        "katakana":"ピャ",
+        "romaji":"pya", 
+        "family":"pya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":97, 
+        "hiragana":"ぴゅ", 
+        "katakana":"ピュ",
+        "romaji":"pyu", 
+        "family":"pya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":98, 
+        "hiragana":"ぴょ", 
+        "katakana":"ピョ",
+        "romaji":"pyo", 
+        "family":"pya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":99, 
+        "hiragana":"みゃ", 
+        "katakana":"ミャ",
+        "romaji":"mya", 
+        "family":"mya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":100, 
+        "hiragana":"みゅ", 
+        "katakana":"ミュ",
+        "romaji":"myu", 
+        "family":"mya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":101, 
+        "hiragana":"みょ", 
+        "katakana":"ミョ",
+        "romaji":"myo", 
+        "family":"mya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":102, 
+        "hiragana":"りゃ", 
+        "katakana":"リャ",
+        "romaji":"rya", 
+        "family":"rya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":103, 
+        "hiragana":"りゅ", 
+        "katakana":"リュ",
+        "romaji":"ryu", 
+        "family":"rya", 
+        "classification":"consonant",
+        "learned": false
+    },
+    {
+        "id":104, 
+        "hiragana":"りょ", 
+        "katakana":"リョ",
+        "romaji":"ryo", 
+        "family":"rya", 
+        "classification":"consonant",
+        "learned": false
     }
 ]

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
+import '../../../server/scripts/read/listen_audio.dart';
 import '../../../server/scripts/read/read_json.dart';
 
 class StudyHiragana extends StatefulWidget {
@@ -86,7 +87,7 @@ class _StudyHiraganaState extends State<StudyHiragana> {
                                           MainAxisAlignment.center,
                                       children: [
                                         Text(
-                                          '\"${hiraganas[index]["romaji"]}\"',
+                                          ' \"${hiraganas[index]["romaji"]}\" ',
                                           style: TextStyle(
                                               fontSize: popupFontSize * 0.5),
                                         )
@@ -112,13 +113,54 @@ class _StudyHiraganaState extends State<StudyHiragana> {
                                       vertical: 22.0,
                                       horizontal: 8.0,
                                     ),
-                                    child: Column(
+                                    child: Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const [
-                                        Icon(
-                                          Icons.volume_up_rounded,
-                                          size: 36.0,
+                                          MainAxisAlignment.spaceAround,
+                                      children: [
+                                        InkWell(
+                                          onTap: () {
+                                            playKanaAudio();
+                                          },
+                                          child: const Icon(
+                                            Icons.volume_up_rounded,
+                                            size: 36.0,
+                                          ),
+                                        ),
+                                        ElevatedButton(
+                                          onPressed: () {
+                                            //addProgressElement();
+                                            //learnKana();
+                                            Navigator.of(context).pop();
+                                          },
+                                          style: ButtonStyle(
+                                            animationDuration:
+                                                const Duration(milliseconds: 5),
+                                            backgroundColor:
+                                                MaterialStateProperty
+                                                    .resolveWith<Color?>(
+                                              (Set<MaterialState> states) {
+                                                if (states.contains(
+                                                    MaterialState.pressed)) {
+                                                  return const Color.fromARGB(
+                                                      255, 6, 68, 9);
+                                                }
+                                                return Colors.greenAccent;
+                                              },
+                                            ),
+                                            foregroundColor:
+                                                MaterialStateProperty
+                                                    .resolveWith<Color?>(
+                                              (Set<MaterialState> states) {
+                                                if (states.contains(
+                                                    MaterialState.pressed)) {
+                                                  return Colors.greenAccent;
+                                                }
+                                                return const Color.fromARGB(
+                                                    255, 6, 68, 9);
+                                              },
+                                            ),
+                                          ),
+                                          child: const Text('Got it!'),
                                         ),
                                       ],
                                     ),
