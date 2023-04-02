@@ -9,10 +9,11 @@ import '../views/errors/page_not_found_404.dart';
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   final bundle = await rootBundle.loadString('AssetManifest.json');
-  print(bundle);
+  //print(bundle);
   final Map<String, dynamic> jsonMap = json.decode(bundle);
+  // ignore: unused_local_variable
   final List<String> assetPaths = jsonMap.keys.toList();
-  print(assetPaths);
+  //print(assetPaths);
   runApp(const Kanadventures());
 }
 

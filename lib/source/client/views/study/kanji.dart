@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
 import '../../../server/scripts/read/read_json.dart';
+import '../../components/bottom nav bar/study/kanji_elements.dart';
 
 class StudyKanji extends StatefulWidget {
   const StudyKanji({Key? key}) : super(key: key);
@@ -24,13 +25,14 @@ class _StudyKanjiState extends State<StudyKanji> {
             Logger().d('5. Connected.\n');
             if (snapshot.hasData) {
               Logger().d('6. Snapshot has data: \n${snapshot.data}');
-              final hiraganas = snapshot.data as List<Map<String, dynamic>>;
-              return ListView.builder(
-                itemCount: hiraganas.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                      leading: Text(hiraganas[index]['kanji'].toString()));
-                },
+              final kanjis = snapshot.data as List<Map<String, dynamic>>;
+              return Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 18.0, horizontal: 12.0),
+                child: KanjiList(
+                  kanjiListLength: kanjis.length,
+                  kanjis: kanjis,
+                ),
               );
             } else {
               Logger().d('6. Snapshot is empty. Error: ${snapshot.error}\n');
