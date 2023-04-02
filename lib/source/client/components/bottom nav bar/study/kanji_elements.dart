@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanadventures/source/client/theme/color_preferences.dart';
 
 class KanjiListElement extends StatefulWidget {
   final String kanjiElement;
@@ -36,125 +37,155 @@ class _KanjiListElementState extends State<KanjiListElement> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: MediaQuery.of(context).size.height * 0.105,
-      width: MediaQuery.of(context).size.width * 0.105,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(3.0),
-          color: const Color.fromARGB(255, 120, 165, 187).withAlpha(128)),
-      child: Row(
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 50.0,
-                  width: 50.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(3.0),
-                      color:
-                          const Color.fromARGB(255, 6, 48, 82).withAlpha(128)),
-                  child: Center(
-                    child: Text(
-                      widget.kanjiElement,
-                      style: TextStyle(fontSize: kanjiFontSize),
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
-                child: Container(
-                  height: 22.0,
-                  width: 50.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(3.0),
-                      color:
-                          const Color.fromARGB(255, 6, 48, 82).withAlpha(128)),
-                  child: Center(
-                    child: Text(
-                      widget.kanjiGrade,
-                      style: TextStyle(fontSize: gradeFontSize),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0, top: 8.0, bottom: 8.0),
-            child: Container(
-              height: 90,
-              width: 260,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(3.0),
-                  color: const Color.fromARGB(255, 6, 48, 82).withAlpha(128)),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                    child: Text(widget.kanjiOnyomi.toString()),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                    child: Text(widget.kanjiKunyomi.toString()),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                    child: Text(widget.kanjiMeaning.toString()),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: Column(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        vertical: 6.0,
+      ),
+      child: Container(
+        height: MediaQuery.of(context).size.height * 0.105,
+        width: MediaQuery.of(context).size.width * 0.105,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(3.0),
+            color: ColorPicker.getContainerColor(widget.hasLearned)[0]
+                .withAlpha(255)),
+        child: Row(
+          children: [
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 35.0,
-                    width: 63.0,
+                    height: 50.0,
+                    width: 50.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(3.0),
-                        color: const Color.fromARGB(255, 6, 48, 82)
-                            .withAlpha(128)),
+                        color:
+                            ColorPicker.getContainerColor(widget.hasLearned)[1]
+                                .withAlpha(255)),
                     child: Center(
                       child: Text(
-                        widget.kanjiClass,
-                        style: TextStyle(fontSize: classFontSize),
+                        widget.kanjiElement,
+                        style: TextStyle(
+                          fontSize: kanjiFontSize,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 8.0),
+                  padding:
+                      const EdgeInsets.only(left: 8.0, right: 8.0, bottom: 8.0),
                   child: Container(
-                    height: 35.0,
-                    width: 63.0,
+                    height: 22.0,
+                    width: 50.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(3.0),
-                        color: const Color.fromARGB(255, 6, 48, 82)
-                            .withAlpha(128)),
+                        color: ColorPicker.getGradeColor(widget.kanjiGrade)
+                            .withAlpha(255)),
                     child: Center(
                       child: Text(
-                        widget.kanjiTag,
-                        style: TextStyle(fontSize: tagFontSize),
+                        widget.kanjiGrade,
+                        style: TextStyle(
+                          fontSize: gradeFontSize,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ],
             ),
-          )
-        ],
+            Padding(
+              padding: const EdgeInsets.only(right: 8.0, top: 8.0, bottom: 8.0),
+              child: Container(
+                height: 90,
+                width: 260,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(3.0),
+                    color: const Color.fromARGB(255, 6, 48, 82).withAlpha(128)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                      child: Text(
+                        widget.kanjiOnyomi.toString(),
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                      child: Text(widget.kanjiKunyomi.toString(),
+                          style: const TextStyle(
+                            color: Colors.white,
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                      child: Text(widget.kanjiMeaning.toString(),
+                          style: const TextStyle(
+                            color: Colors.white,
+                          )),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                    child: Container(
+                      height: 35.0,
+                      width: 63.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3.0),
+                          color: const Color.fromARGB(255, 6, 48, 82)
+                              .withAlpha(128)),
+                      child: Center(
+                        child: Text(
+                          widget.kanjiClass,
+                          style: TextStyle(
+                            fontSize: classFontSize,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Container(
+                      height: 35.0,
+                      width: 63.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3.0),
+                          color: const Color.fromARGB(255, 6, 48, 82)
+                              .withAlpha(128)),
+                      child: Center(
+                        child: Text(
+                          widget.kanjiTag,
+                          style: TextStyle(
+                            fontSize: tagFontSize,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -9,5 +9,49 @@
     "tag":"animals",
     "class": "noun",
     "learned": false
+    },
+    {
+    "id":1,
+    "kanji":"人",
+    "onyomi":["ひと"],
+    "kunyomi":["〜じん","〜にん"],
+    "meaning":["person", "people", "human"],
+    "grade":"N4",
+    "tag":"animals",
+    "class": "noun",
+    "learned": false
+    },
+    {
+    "id":1,
+    "kanji":"人",
+    "onyomi":["ひと"],
+    "kunyomi":["〜じん","〜にん"],
+    "meaning":["person", "people", "human"],
+    "grade":"N3",
+    "tag":"animals",
+    "class": "noun",
+    "learned": false
+    },
+    {
+    "id":1,
+    "kanji":"人",
+    "onyomi":["ひと"],
+    "kunyomi":["〜じん","〜にん"],
+    "meaning":["person", "people", "human"],
+    "grade":"N2",
+    "tag":"animals",
+    "class": "noun",
+    "learned": false
+    },
+    {
+    "id":1,
+    "kanji":"人",
+    "onyomi":["ひと"],
+    "kunyomi":["〜じん","〜にん"],
+    "meaning":["person", "people", "human"],
+    "grade":"N1",
+    "tag":"animals",
+    "class": "noun",
+    "learned": false
     }
 ]

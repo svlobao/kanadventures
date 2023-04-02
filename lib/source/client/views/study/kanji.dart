@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
 
 import '../../../server/scripts/read/read_json.dart';
 import '../../components/bottom nav bar/study/kanji_elements.dart';
@@ -22,9 +21,7 @@ class _StudyKanjiState extends State<StudyKanji> {
         future: fetchJson(path: jsonPath),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            Logger().d('5. Connected.\n');
             if (snapshot.hasData) {
-              Logger().d('6. Snapshot has data: \n${snapshot.data}');
               final kanjis = snapshot.data as List<Map<String, dynamic>>;
               return Padding(
                 padding: const EdgeInsets.symmetric(
@@ -35,11 +32,9 @@ class _StudyKanjiState extends State<StudyKanji> {
                 ),
               );
             } else {
-              Logger().d('6. Snapshot is empty. Error: ${snapshot.error}\n');
               return const Center(child: Text('No data'));
             }
           } else {
-            Logger().d('7. Attempting to connect.\n');
             return const Center(child: CircularProgressIndicator());
           }
         },
