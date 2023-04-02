@@ -107,12 +107,12 @@ class _KanjiListElementState extends State<KanjiListElement> {
                     color: const Color.fromARGB(255, 6, 48, 82).withAlpha(128)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                       child: Text(
-                        widget.kanjiOnyomi.toString(),
+                        widget.kanjiOnyomi.join(', '),
                         style: const TextStyle(
                           color: Colors.white,
                         ),
@@ -120,14 +120,14 @@ class _KanjiListElementState extends State<KanjiListElement> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: Text(widget.kanjiKunyomi.toString(),
+                      child: Text(widget.kanjiKunyomi.join(', '),
                           style: const TextStyle(
                             color: Colors.white,
                           )),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: Text(widget.kanjiMeaning.toString(),
+                      child: Text(widget.kanjiMeaning.join(', '),
                           style: const TextStyle(
                             color: Colors.white,
                           )),
