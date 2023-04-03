@@ -8,28 +8,40 @@
     "grade":"N5",
     "tag":"animals",
     "class": "noun",
+    "examples_words": ["人々","人間","地球人", "大人"],
+    "examples_kanas": ["ひとびと","にんげん","ちきゅうじん", "おとな"],
+    "examples_meaning": ["People","Human","Earthling", "Adult"],
+    "stroke_order_image": "",
     "learned": false
     },
     {
     "id":1,
     "kanji":"人",
     "onyomi":["ひと"],
-    "kunyomi":["〜じん","〜にん"],
+    "kunyomi":["〜じん","〜にん","〜にん"],
     "meaning":["person", "people", "human"],
     "grade":"N4",
     "tag":"animals",
     "class": "noun",
+    "examples_words": ["人々","人間","地球人", "大人"],
+    "examples_kanas": ["ひとびと","にんげん","ちきゅうじん", "おとな"],
+    "examples_meaning": ["People","Human","Earthling", "Adult"],
+    "stroke_order_image": "",
     "learned": false
     },
     {
     "id":1,
     "kanji":"人",
     "onyomi":["ひと"],
-    "kunyomi":["〜じん","〜にん"],
+    "kunyomi":["〜じん","〜にん","〜にん","〜にん","〜にん"],
     "meaning":["person", "people", "human"],
     "grade":"N3",
     "tag":"animals",
     "class": "noun",
+    "examples_words": ["人々","人間","地球人", "大人"],
+    "examples_kanas": ["ひとびと","にんげん","ちきゅうじん", "おとな"],
+    "examples_meaning": ["People","Human","Earthling", "Adult"],
+    "stroke_order_image": "",
     "learned": false
     },
     {
@@ -41,6 +53,10 @@
     "grade":"N2",
     "tag":"animals",
     "class": "noun",
+    "examples_words": ["人々","人間","地球人", "大人"],
+    "examples_kanas": ["ひとびと","にんげん","ちきゅうじん", "おとな"],
+    "examples_meaning": ["People","Human","Earthling", "Adult"],
+    "stroke_order_image": "",
     "learned": false
     },
     {
@@ -52,6 +68,10 @@
     "grade":"N1",
     "tag":"animals",
     "class": "noun",
+    "examples_words": ["人々","人間","地球人", "大人"],
+    "examples_kanas": ["ひとびと","にんげん","ちきゅうじん", "おとな"],
+    "examples_meaning": ["People","Human","Earthling", "Adult"],
+    "stroke_order_image": "",
     "learned": false
     }
 ]
